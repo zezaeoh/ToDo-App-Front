@@ -1,0 +1,39 @@
+.content-box {
+    display: block;
+    border-top: 1px solid #3bc9db; 
+    border-bottom: 1px solid #3bc9db; 
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.content-box div {
+    display: flex;
+}
+
+.content-box div.reverse{
+    flex-direction: row-reverse;
+    background: #3bc9db;
+    color: #fff;
+}
+
+.content-box h5 {
+    margin: 0;
+}
+
+.text-box {
+    flex: 1;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #c5f6fa;
+    border-radius: 5px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background: #e3fafc;
+}
