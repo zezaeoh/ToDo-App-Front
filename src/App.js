@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = 'http://52.231.67.172:8080/api/todos/';
+    const url = 'http://13.76.199.186:8080/api/todos/';
     let res = await axios.get(url);
     await this.setState({ 
       todos: res.data.map(a => {
@@ -73,7 +73,7 @@ class App extends Component {
       return;
     }
 
-    const url = 'http://52.231.67.172:8080/api/todos/';
+    const url = 'http://13.76.199.186:8080/api/todos/';
     const data = {
       title: title,
       content: content,
@@ -108,7 +108,7 @@ class App extends Component {
 
     const selected = todos[index];
 
-    const url = 'http://52.231.67.172:8080/api/todos/' + id + (selected.checked ? '/uncheck/' : '/check/');
+    const url = 'http://13.76.199.186:8080/api/todos/' + id + (selected.checked ? '/uncheck/' : '/check/');
     axios.put(url)
       .catch(err => console.log(err));
 
@@ -150,7 +150,7 @@ class App extends Component {
 
   handleRemove = (id) => {
     const { todos } = this.state;
-    const url = 'http://52.231.67.172:8080/api/todos/' + id;
+    const url = 'http://13.76.199.186:8080/api/todos/' + id;
     
     axios.delete(url)
       .catch(err => console.log(err));
